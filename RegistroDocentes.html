@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Docentes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
+</head>
+<body>
+    <form class="formulario">
+        <h1> Registro de Docentes</h1>
+        <label for="nombre">Nombres Completos:</label>
+        <input type="text" name="nombre" placeholder="Nombres Completos" required>
+        <label for="cedula">Escriba su Número de Cédula:</label>
+        <input type="text" name="cedula" placeholder="Cédula" required>
+        <label for="edad">Elija su Edad:</label>
+        <input type="number" name="edad" placeholder="Edad" min="12" max="75" required>
+
+        <label for="Sexo">Elija su Sexo:</label>
+        <select name="Sexo">
+            <option value="" disabled selected>Sexo</option>
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+            <option value="otro">Otro</option>
+        </select>
+
+        <LAbel for="nacimiento">Elija su Nacimiento:</LAbel>
+        <input type="date" name="nacimiento" placeholder="Fecha de nacimiento" required>
+        <label for="direccionn">Escriba su Dirección:</label>
+        <input type="text" name="direccion" placeholder="Dirección" required>
+        <label for="telefono">Escriba su Número de Teléfono:</label>
+        <input type="text" name="telefono" placeholder="Teléfono" required>
+        <label for="email">Escriba su Correo Electrónico:</label>
+        <input type="text" name="correo electronico" placeholder="Correo Electrónico" required>
+
+        <label for="capacitacion">Elija el Área de Copacitación:</label>
+        <select name="capacitacion">
+            <option value="" disabled selected>Área de Capacitación</option>
+            <option value="Belleza Integral">Belleza Integral</option>
+            <option value="Informatica">Infórmatica</option>
+            <option value="Contabilidad y Administracion">Contabilidad y Administración</option>
+            <option value="Urgencias Medicas">Urgencias y Emergencias Médicas</option>
+            <option value="Enfermeria">Enfermería</option>
+            <option value="Parvularia">Parvularia</option>
+        </select>
+        <button type="submit"> Registrar Docente</button>
+    </form>
+</body>
+</html>
